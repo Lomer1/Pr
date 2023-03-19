@@ -1,0 +1,20 @@
+.btn {
+    background-color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin-top: 5px;
+    min-width: 130px;
+    text-align: start;
+}
+
+.btn_buy {
+    color: white;
+    background-color: #ba8ed1;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin-top: 5px;
+    min-width: 130px;
+    text-align: start;
+}
