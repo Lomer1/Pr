@@ -4,24 +4,40 @@ import ReactECharts from 'echarts-for-react';
 
 export default function Echarts() {
   const option = {
+    color: ["#ba8ed1"],
     title: {
-      text: 'Line Chart Example'
-    },
-    toolbox: {
-        feature: {
-            saveAsImage: {},
-            dataZoom: {},
-            restore: {}
-        }
+      text: 'Line Chart Example',
+      textAlign: "auto",
+      textStyle: {
+        fontSize: 24,
+        color: "rgb(56 56 56)"
+      },
     },
     tooltip: {},
     legend: {
       data:['Label']
     },
     xAxis: {
-      data: ['New York', 'Los Angeles', 'Singepore', 'Bangladesh', 'Saigon', 'Dallas']
+      data: ['New York', 'Los Angeles', 'Singepore', 'Bangladesh', 'Saigon', 'Dallas'],
+      axisLine: {
+        lineStyle: {
+          color: "#d5d5d5"
+        }
+      }
     },
-    yAxis: {},
+    yAxis: {
+      axisLine: {
+        lineStyle: {
+          color: "#d5d5d5"
+        }
+      },
+      splitLine: {
+        lineStyle: {
+            // Dark and light colors will be used in turns
+            color: ['#d5d5d5']
+        }
+    }
+    },
     series: [{
       name: 'City',
       type: 'bar',

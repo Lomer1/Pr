@@ -1,6 +1,10 @@
+import CardSales from "../components/UI/cardSales/CardSales";
+
 function AnaliticsPage() {
     return ( 
-    <>HIIIIIIIIIIIIIIIIIIIIII</> 
+        <div className="dashboard">
+            <CardSales/>
+        </div>
     );
 }
 

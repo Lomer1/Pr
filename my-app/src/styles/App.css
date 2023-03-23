@@ -49,19 +49,6 @@
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-.right_panel {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 20px;
-    height: 100%;
-    width: 30%;
-    background: rgba( 255, 255, 255, 0 );
-    backdrop-filter: blur( 10px );
-    -webkit-backdrop-filter: blur( 15px );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
 .high_part {
     width: 100%;
     margin-top: 20px;
@@ -123,3 +110,23 @@ p {
 }
 
 .buttons {display: flex;}
+
+
+.right_panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    height: 100%;
+    width: 30%;
+    background: rgba( 255, 255, 255, 0 );
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 15px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.wraper_eachrts {
+    background: rgba( 255, 255, 255, 0.95 );
+    border-radius: 15px;
+    padding: 10px;
+}
