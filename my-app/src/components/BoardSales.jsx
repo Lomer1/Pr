@@ -6,6 +6,7 @@ function BoardSales() {
             <CardSales/>
             <CardSales/>
             <CardSales/>
+            <CardSales/>
         </div>
      );
 }
