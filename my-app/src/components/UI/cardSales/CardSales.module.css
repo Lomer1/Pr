@@ -2,7 +2,6 @@
     margin-top: 20px;
     padding: 10px;
     height: 140px;
-    min-width: 240px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

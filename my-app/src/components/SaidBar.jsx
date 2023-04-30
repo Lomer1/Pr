@@ -8,7 +8,7 @@ const SideBar = () => {
         <div className="saidBar">
             <div style={{marginTop: 20}}>logo</div>
             <div className="saidBar_links">
-                <Link to = '/'>
+                <Link to = '/ReactMarket'>
                     <Button>Dashboard</Button>
                 </Link>
                 <Link to = '/Analitics'>
@@ -28,6 +28,9 @@ const SideBar = () => {
                 </Link>
             </div>
             <SignIn></SignIn>
+            <div className="menu">
+                <span></span>
+            </div>
         </div>
      );
 }

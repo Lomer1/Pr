@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <SideBar/>
       <Routes>
-        <Route path='/' element={<DashboardPage/>}/>
+        <Route path='/ReactMarket' element={<DashboardPage/>}/>
         <Route path='/Analitics' element={<AnaliticsPage/>}/>
       </Routes>
       <RightPanel/>

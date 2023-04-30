@@ -2,9 +2,12 @@ import React from 'react';
 
 function SignIn() {
     return ( 
-        <div className="wraper">
+        <div className="signIn">
             <div className="avatar">A</div>
             <div className="name">John</div>
+            <div className="menu">
+                <span></span>
+            </div>
         </div>
      );
 }
