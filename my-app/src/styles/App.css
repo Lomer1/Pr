@@ -30,7 +30,7 @@ body{
     justify-content: space-between;
     gap: 150px;
     align-items: center;
-    background: rgba( 255, 255, 255, 0.95 );
+    background: rgba( 255, 255, 255, 1 );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
@@ -159,25 +159,41 @@ p {
         padding: 10px 20px;
         width: 100%;
         flex-direction: row;
+        position: fixed;
         z-index: 5;
     }
 
     .signIn {
         display: none;
     }
-    .saidBar_links {
+    .saidBar_links.active {
         position: fixed;
         left: 0;
         top: 65px;
         width: 100%;
+        height: 100%;
         background-color: rgba( 255, 255, 255, 0.85 );
-        backdrop-filter: blur( 8.5px );
+        backdrop-filter: blur( 25px );
+        align-items: center;
+        display: flex;
+        transition: all .7s ;
+        overflow: auto;
+    }
+
+    .saidBar_links {
+        top: -100%;
+        left: 0;
+        position: fixed;
+        transition: all .7s;
+        width: 100%;
+        background-color: rgba( 255, 255, 255, 0.85 );
+        backdrop-filter: blur( 25px );
         align-items: center;
     }
 
-    
 
     .dashboard {
+        margin-top: 60px;
         width: 100%;
         padding: 20px;
     }
@@ -198,6 +214,7 @@ p {
         width: 100%;
         height: 2px;
         left: 0;
+        transition: all .3s ;
     }
     .menu::after {
         bottom: 0;
@@ -207,6 +224,18 @@ p {
     }
     .menu span {
         top: 9px;
+    }
+
+    .menu.active::after{
+        transform: rotate(45deg);
+        bottom: 9px;
+    }
+    .menu.active::before{
+        transform: rotate(-45deg);
+        top: 9px;
+    }
+    .menu.active span {
+        transform: scale(0);
     }
   }
 

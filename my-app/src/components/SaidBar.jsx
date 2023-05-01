@@ -1,13 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {Link} from 'react-router-dom'
 import Button from "./UI/buttons/Button";
 import SignIn from './UI/signIn/SignIn';
 
 const SideBar = () => {
+
+    const[menuActive, setMenuActive] = useState(false)
+
+
+    const menuClick = () => {
+        if (menuActive == true) {
+            setMenuActive(false)
+        } else {
+            setMenuActive(true)
+        }
+    }
+
+    useEffect(() => {
+        const html = document.querySelector("html");
+        if (html) {
+          html.style.overflow = menuActive ? "hidden" : "auto";
+        }
+      }, [menuActive]);
+
     return ( 
         <div className="saidBar">
             <div style={{marginTop: 20}}>logo</div>
-            <div className="saidBar_links">
+            <div className={menuActive ? 'saidBar_links active':'saidBar_links'}>
                 <Link to = '/ReactMarket'>
                     <Button>Dashboard</Button>
                 </Link>
@@ -28,7 +47,7 @@ const SideBar = () => {
                 </Link>
             </div>
             <SignIn></SignIn>
-            <div className="menu">
+            <div className={menuActive ? 'menu active':'menu'} onClick={e => menuClick()}>
                 <span></span>
             </div>
         </div>
