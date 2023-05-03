@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/ReactMarket/static/css/main.b63daa01.css",
-    "main.js": "/ReactMarket/static/js/main.a0f4169f.js",
+    "main.css": "/ReactMarket/static/css/main.bcfa3b55.css",
+    "main.js": "/ReactMarket/static/js/main.833c863d.js",
+    "static/media/ava.jpg": "/ReactMarket/static/media/ava.e03c7b9a4cdfdab6a178.jpg",
     "index.html": "/ReactMarket/index.html",
-    "main.b63daa01.css.map": "/ReactMarket/static/css/main.b63daa01.css.map",
-    "main.a0f4169f.js.map": "/ReactMarket/static/js/main.a0f4169f.js.map"
+    "main.bcfa3b55.css.map": "/ReactMarket/static/css/main.bcfa3b55.css.map",
+    "main.833c863d.js.map": "/ReactMarket/static/js/main.833c863d.js.map"
   },
   "entrypoints": [
-    "static/css/main.b63daa01.css",
-    "static/js/main.a0f4169f.js"
+    "static/css/main.bcfa3b55.css",
+    "static/js/main.833c863d.js"
   ]
 }
