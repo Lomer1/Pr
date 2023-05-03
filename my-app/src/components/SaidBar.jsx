@@ -25,12 +25,12 @@ const SideBar = () => {
 
     return ( 
         <div className="saidBar">
-            <div style={{marginTop: 20}}>logo</div>
+            <div className='logo' style={{marginTop: 20}}>logo</div>
             <div className={menuActive ? 'saidBar_links active':'saidBar_links'}>
-                <Link to = '/ReactMarket'>
+                <Link to = '/ReactMarket' /*onClick={e => menuActive = false}*/>
                     <Button>Dashboard</Button>
                 </Link>
-                <Link to = '/Analitics'>
+                <Link to = '/Analitics' /*onClick={e => menuActive = false}*/>
                     <Button>Analitics</Button>
                 </Link>
                 <Link to = '/Analitics'>

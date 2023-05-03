@@ -6,10 +6,6 @@
     color: rgb(56 56 56);
 }
 
-body{
-    
-}
-
 #root {
     background: linear-gradient(311deg, rgba(247,223,148,1) 0%, rgba(242,138,247,1) 57%, rgba(144,255,249,1) 100%);
     background-repeat: no-repeat;
@@ -43,6 +39,22 @@ body{
     display: none;
 }
 
+.avatar {
+    width: 45px;
+    height: 45px;
+    background-image: url("C:\Coding\ProjectPage\my-app\src\components\UI\signIn\img\avatar\ava.jpg");
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.signIn {
+    display: flex;
+}
+
+.nameinfo {
+    display: flex;
+    flex-direction: column;
+}
 /*--------------------------------DASHBOARD----------------------------------------*/
 
 .dashboard {
@@ -163,9 +175,6 @@ p {
         z-index: 5;
     }
 
-    .signIn {
-        display: none;
-    }
     .saidBar_links.active {
         position: fixed;
         left: 0;
@@ -181,7 +190,7 @@ p {
     }
 
     .saidBar_links {
-        top: -100%;
+        top: -120%;
         left: 0;
         position: fixed;
         transition: all .7s;
@@ -243,6 +252,15 @@ p {
     .saidBar {
         padding: 10px 20px;
     }
+
+    .logo {
+        display: none;
+    }
+
+    .nameinfo {
+        display: none;
+    }
+
     .high_part {
         flex-direction: column;
         align-items: start;
